@@ -1,4 +1,16 @@
-/* Compile with i686-elf-gcc -c kernel.c -o kernel.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra */
+/* Compile with i686-elf-gcc -T linker.ld -o myos.bin -ffreestanding -O2 -nostdlib boot.o kernel.o -lgcc */
+
+/*
+	To make a bootable iso of this kernel run the following commands:
+
+	mkdir -p isodir
+	mkdir -p isodir/boot
+	cp myos.bin isodir/boot/myos.bin
+	mkdir -p isodir/boot/grub
+	cp grub.cfg isodir/boot/grub/grub.cfg
+	grub-mkrescue -o myos.iso isodir
+	
+*/
 
 #if !defined(__cplusplus)
 #include <stdbool.h> /* C doesn't have booleans by default. */
