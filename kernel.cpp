@@ -1,4 +1,4 @@
-/* Compile with i686-elf-gcc -c kernel.c -o kernel.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra */
+/* Compile with i686-elf-g++ -c kernel.cpp -o kernel.o -ffreestanding -O2 -Wall -Wextra -fno-exceptions -fno-rtti */
 
 #if !defined(__cplusplus)
 #include <stdbool.h> /* C doesn't have booleans by default. */
