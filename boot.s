@@ -1,9 +1,9 @@
 # Declare constants for multiboot header
-.set ALIGN, 1<<0					#align loaded modules on page bounds
-.set MEMINFO, 1<<1					#provides memory map
+.set ALIGN, 1<<0				#align loaded modules on page bounds
+.set MEMINFO, 1<<1				#provides memory map
 .set FLAGS, ALIGN | MEMINFO			#the multiboot flag field
 .set MAGIC, 0x1BADB002				#lets bootloader find the header
-.set CHECKSUM, (-MAGIC + FLAGS)		#checksum to prove we are multiboot
+.set CHECKSUM, (-MAGIC + FLAGS)			#checksum to prove we are multiboot
 
 # Declare a header as in the Multiboot Standard. We put this into a special
 # section so we can force the header to be in the start of the final program.
