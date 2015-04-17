@@ -1,2 +1,2 @@
-# os
-In which I build an operating system
+# Bare bones OS
+In which I build a kernel and operating system
