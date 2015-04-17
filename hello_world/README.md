@@ -31,7 +31,7 @@ where sdx is the location of the USB. Don't erase your hard disk!!
 
 
 TODO:
-	* Adding Support for Newlines to Terminal Driver
-	* Implementing Terminal Scrolling
-	* Rendering Colorful ASCII Art
+ - Adding Support for Newlines to Terminal Driver
+ - Implementing Terminal Scrolling
+ - Rendering Colorful ASCII Art
 
